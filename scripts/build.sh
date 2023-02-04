@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd "~/$CR_NAME"
+cd ~
+cd $CR_NAME
 
 source build/envsetup.sh;
 
