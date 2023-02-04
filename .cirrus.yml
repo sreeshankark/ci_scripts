@@ -11,7 +11,8 @@ task:
       cpu: 8
       memory: 32G
 
-
+  Install_Essentials_script:
+     - bash -c "$(curl -sL https://raw.githubusercontent.com/Sanju0910/aio_scripts/master/setup/android_build_env.sh)"
 
   Sync_script:
       - bash -c "$(curl -sL https://raw.githubusercontent.com/Sanju0910/cirrus_continous_integration/main/scripts/sync.sh)"
