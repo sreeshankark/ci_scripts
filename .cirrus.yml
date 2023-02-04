@@ -12,13 +12,13 @@ task:
       memory: 32G
       
   Install_Essentials_script:
-     - bash -c "$(curl -sL https://raw.githubusercontent.com/Sanju0910/aio_scripts/master/setup/android_build_env.sh)"
+     - curl -sL https://raw.githubusercontent.com/Sanju0910/aio_scripts/master/setup/android_build_env.sh | bash
      
   Sync_script:
-      - bash -c "$(curl -sL https://raw.githubusercontent.com/Sanju0910/cirrus_continous_integration/main/scripts/sync.sh)"
+      - curl -sL https://raw.githubusercontent.com/Sanju0910/cirrus_continous_integration/main/scripts/sync.sh | bash
 
   Build_script:
-      - bash -c "$(curl -sL https://raw.githubusercontent.com/Sanju0910/cirrus_continous_integration/main/scripts/build.sh)"
+      - curl -sL https://raw.githubusercontent.com/Sanju0910/cirrus_continous_integration/main/scripts/build.sh | bash
       
   Deploy_script:
-      - bash -c "$(curl -sL https://raw.githubusercontent.com/Sanju0910/cirrus_continous_integration/main/scripts/deploy.sh)"
+      - curl -sL https://raw.githubusercontent.com/Sanju0910/cirrus_continous_integration/main/scripts/deploy.sh | bash
