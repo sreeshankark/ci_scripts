@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "out/target/product/$CODENAME";
+cd "~/$CR_NAME/out/target/product/$CODENAME";
 date
 echo spawn git.sh > git.sh;
 echo expect "Username for 'https://github.com':" >> git.sh;
