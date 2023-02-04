@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/$CR_NAME
+
 source build/envsetup.sh;
 
 lunch twrp_$CODENAME-eng;
