@@ -1,10 +1,9 @@
 #!/bin/bash
 
-cd ~
-cd $CR_NAME
-pwd;
+cd ~/${CR_NAME};
 source build/envsetup.sh;
 
 lunch twrp_$CODENAME-eng;
 
-mka recoveryimage -j$(nproc --all);
+mka $TARGET -j$(nproc --all);
+exit 0;
