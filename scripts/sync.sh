@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd ~
+cd ~;
 mkdir $CR_NAME;
 cd $CR_NAME;
-git config --global user.name "$USERNAME"
-git config --global user.email "$USERMAIL"
+git config --global user.name "$USERNAME";
+git config --global user.email "$USERMAIL";
 repo init -u $CR_REPO -b $CR_BRANCH;
 
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags;
