@@ -2,6 +2,7 @@ env:
     CONFIG: config.sh
     GH_TOKEN: ENCRYPTED[!8f85cb8f85dd058e9bd506d3c39df388c3c401e07cc03eb090957e5a6c6f0f0e96b46f71048e78ac75bb6c2d1de59d6f!]
     CIRRUS_SHELL: bash
+    CIRRUS_OS: ubuntu-latest
 
 task:
   name: "Recovery Build"
