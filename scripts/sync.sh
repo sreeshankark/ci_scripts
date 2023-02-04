@@ -3,6 +3,7 @@
 cd ~
 mkdir $CR_NAME;
 cd $CR_NAME;
+pwd;
 git config --global user.name "$USERNAME"
 git config --global user.email "$USERMAIL"
 repo init -u $CR_REPO -b $CR_BRANCH;
