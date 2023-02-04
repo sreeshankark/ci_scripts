@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~;
+cd ~
 mkdir $CR_NAME;
 cd $CR_NAME;
 git config --global user.name "$USERNAME"
