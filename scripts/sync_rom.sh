@@ -5,7 +5,7 @@ mkdir $ROM_NAME;
 cd $ROM_NAME;
 git config --global user.name "$USERNAME";
 git config --global user.email "$USERMAIL";
-
+sudo apt install repo -y
 # Initialize RED source
 repo init -u $ROM_REPO -b $ROM_BRANCH;
 
