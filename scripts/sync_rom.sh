@@ -95,4 +95,11 @@ if [ -d "prebuilt/clang/kernel" ];
    then 
       git clone https://github.com/Sanju0910/prebuilts_clang_kernel_linux-x86_clang-r416183b prebuilt/clang/kernel;
 fi
+if [ -z "$EXTRA_REPO" ];
+    then
+     echo "NO EXTRA REPOS FOUND"
+        else
+    git clone $EXTRA_REPO -b $EXTRA_REPO_BRANCH $EXTRA_REPO_PATH
+fi        
+       
 exit 0;
