@@ -10,6 +10,6 @@ git clone https://gitlab.com/OrangeFox/sync.git
 cd ~/OrangeFox_sync/sync/
 ./orangefox_sync.sh --branch 12.1 --path ~/orangefox
 cd ~/orangefox
-git clone $DT_REPO -b $DT_BRANCH "device/$OEM/$CODENAME"
+git clone https://github.com/Sanju0910/orangefox_device_oneplus_avicii.git -b android-12.1 device/oneplus/avicii
 
 exit 0
