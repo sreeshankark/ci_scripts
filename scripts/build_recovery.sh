@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd /root
 cd ${CR_NAME}
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
