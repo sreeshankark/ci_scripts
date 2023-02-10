@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd /root
 cd $CR_NAME
 cd out/target/product/$CODENAME;
 curl -sL https://git.io/file-transfer | sh;
