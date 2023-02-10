@@ -11,4 +11,5 @@ then
 mka $TARGET -j$(nproc --all);
 else
 mka adbd $TARGET -j$(nproc --all);
+fi
 exit 0;
