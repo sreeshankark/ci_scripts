@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /root
-cd ${CR_NAME}
+cd $CR_NAME
 source build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export FOX_VARIANT=${FOX_VARIANT}
