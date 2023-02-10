@@ -1,13 +1,15 @@
 #!/bin/bash
 
-# Change to the Home Directory
 cd ~
+git config --global user.name "$USERNAME";
+git config --global user.email "$USERMAIL";
 
-# Clone the Sync Repo
 mkdir ~/OrangeFox_sync
 cd ~/OrangeFox_sync
 git clone https://gitlab.com/OrangeFox/sync.git
 cd ~/OrangeFox_sync/sync/
-./orangefox_sync.sh --branch 12.1 --path ~/${CR_NAME}
+./orangefox_sync.sh --branch 12.1 --path ~/${CR_NAME};
+cd $CR_NAME;
+git clone $DT_REPO -b $DT_BRANCH "device/$OEM/$CODENAME";
 
 exit 0
