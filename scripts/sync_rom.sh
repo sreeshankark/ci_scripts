@@ -19,10 +19,7 @@ git clone $VENDOR_REPO -b $VENDOR_BRANCH "vendor/$OEM/$CODENAME";
 
 git clone $KERNEL_REPO -b $KERNEL_BRANCH "kernel/$OEM/$CODENAME";
 
-git clone $FIRMWARE_REPO -b $FIRMWARE_BRANCH "vendor/$OEM/firmware"
+git clone $HARDWARE_REPO -b $FIRMWARE_BRANCH "vendor/$OEM/firmware"
 
-if [ -d "prebuilt/clang/kernel" ];
-   then 
-      git clone https://github.com/Sanju0910/prebuilts_clang_kernel_linux-x86_clang-r416183b prebuilt/clang/kernel;
-fi
+git clone git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 -b master prebuilt/clang/kernel;
 exit 0;
