@@ -19,7 +19,7 @@ git clone $VENDOR_REPO -b $VENDOR_BRANCH "vendor/$OEM/$CODENAME";
 
 git clone $KERNEL_REPO -b $KERNEL_BRANCH "kernel/$OEM/$CODENAME";
 
-git clone $HARDWARE_REPO -b $FIRMWARE_BRANCH "hardware/$OEM";
+git clone $HARDWARE_REPO -b $HARDWARE_BRANCH "hardware/$OEM";
 
 git clone git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 -b master prebuilt/clang/kernel;
 exit 0;
