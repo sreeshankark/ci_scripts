@@ -23,5 +23,5 @@ rm -rf hardware/oplus;
 
 git clone $HARDWARE_REPO -b $HARDWARE_BRANCH "hardware/$OEM";
 
-git clone git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 -b master prebuilt/clang/kernel;
+git clone git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 -b master prebuilt/clang/kernel/linux-x86;
 exit 0;
