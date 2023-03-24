@@ -23,8 +23,8 @@ rm -rf hardware/oplus;
 
 git clone $HARDWARE_REPO -b $HARDWARE_BRANCH "hardware/oplus";
 
-rm -rf prebuilt/clang/kernel;
+rm -rf prebuilts/clang/kernel;
 
-git clone https://gitlab.com/Sanju0910/clang-r487747 -b main prebuilt/clang/kernel/linux-x86/clang-487747;
+git clone https://gitlab.com/Sanju0910/clang-r487747 -b main prebuilts/clang/kernel/linux-x86/clang-487747;
 
 exit 0;
