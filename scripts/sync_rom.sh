@@ -7,7 +7,7 @@ git config --global user.name "$USERNAME";
 git config --global user.email "$USERMAIL";
 
 # Initialize RED source
-repo init -u --depth=1 $ROM_REPO -b $ROM_BRANCH;
+repo init --depth=1 -u $ROM_REPO -b $ROM_BRANCH;
 
 # Sync RED source
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags;
