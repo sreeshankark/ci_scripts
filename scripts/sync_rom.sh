@@ -11,7 +11,7 @@ repo init --depth=1 --no-repo-verify -u $ROM_REPO -b $ROM_BRANCH -g default,-mip
 
 # Sync RED source
 
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j256;
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync;
 
 # Clone GREEN source
 git clone $DEVICE_REPO --depth=1 -b $DEVICE_BRANCH "device/$OEM/$CODENAME";
