@@ -7,5 +7,5 @@ source build/envsetup.sh;
 
 lunch $PRODUCT_NAME-$VARIANT
 
-mka evolution -j256
+mka evolution
 exit 0;
