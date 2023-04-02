@@ -2,7 +2,7 @@
 
 cd ~
 cd ${ROM_NAME}
-cd ~/roms/${ROM_NAME}
+cd ~/roms/$
 
 export CCACHE_DIR=~/ccache/${ROM_NAME}/avicii
 
