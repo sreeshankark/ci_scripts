@@ -3,7 +3,7 @@
 cd ~
 cd ${ROM_NAME}
 
-
+sudo systemctl disable --now systemd-oomd
 export CCACHE_DIR=~/ccache/${ROM_NAME}/avicii
 
 export CCACHE_EXEC=$(which ccache)
@@ -18,5 +18,5 @@ source build/envsetup.sh;
 
 lunch $PRODUCT_NAME-$VARIANT
 
-mka evolution
+mka evolution -j$(nproc --all)
 exit 0;
