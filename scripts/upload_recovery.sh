@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd /root
-cd $CR_NAME
+cd ~
+cd pbrp
 cd out/target/product/$CODENAME;
 curl -sL https://git.io/file-transfer | sh;
 ./transfer wet recovery.img;
