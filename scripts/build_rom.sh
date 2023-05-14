@@ -10,7 +10,7 @@ export CCACHE_EXEC=$(which ccache)
 
 export USE_CCACHE=1
 
-ccache -M 16G
+ccache -M 150G
 
 ccache -z
 export ALLOW_MISSING_DEPENDENCIES=true
