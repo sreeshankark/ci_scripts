@@ -15,6 +15,7 @@ cd orangefox
 git clone https://github.com/Sanju0910/orangefox_device_oneplus_avicii.git -b android-12.1 device/oneplus/avicii
 rm -rf bootable/recovery 
 git clone https://github.com/Sanju0910/recovery bootable/recovery
+git clone https://gitlab.com/OrangeFox/misc/theme.git bootable/recovery/gui/theme
 cd system/vold
 git init
 git remote add pbrp https://github.com/PitchBlackRecoveryProject/android_system_vold.git
