@@ -10,7 +10,7 @@ export CCACHE_EXEC=$(which ccache)
 
 export USE_CCACHE=1
 
-ccache -M 8G
+ccache -M 80G
 
 ccache -z
 export ALLOW_MISSING_DEPENDENCIES=true
@@ -18,5 +18,5 @@ source build/envsetup.sh;
 
 lunch $PRODUCT_NAME-$VARIANT
 
-mka evolution -j$(nproc --all)
+mka evolution -j16
 exit 0;
