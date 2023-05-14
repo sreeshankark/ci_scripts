@@ -13,12 +13,8 @@ bash orangefox_sync.sh --branch "12.1" --path /root/orangefox
 cd ../..
 cd orangefox
 git clone https://github.com/Sanju0910/orangefox_device_oneplus_avicii.git -b android-12.1 device/oneplus/avicii
-cd bootable/recovery 
-git init
-git remote add pbrp https://github.com/PitchBlackRecoveryProject/android_bootable_recovery.git
-git fetch pbrp fbe-patches
-git cherry-pick 80be2b7b331c3055070e17cdc7ae3b228b6dc18d
-cd ../..
+rm -rf bootable/recovery 
+git clone https://github.com/Sanju0910/recovery bootable/recovery
 cd system/vold
 git init
 git remote add pbrp https://github.com/PitchBlackRecoveryProject/android_system_vold.git
