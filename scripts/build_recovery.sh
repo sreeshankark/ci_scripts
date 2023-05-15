@@ -9,8 +9,8 @@ lunch twrp_$CODENAME-eng || lunch omni_$CODENAME-eng || { printf "Compilation fa
 
 if [ $TARGET = "pbrp" ]
 then
-mka $TARGET -j8
+mka $TARGET -j4
 else
-mka adbd $TARGET -j8
+mka adbd $TARGET -j4
 fi
 exit 0
