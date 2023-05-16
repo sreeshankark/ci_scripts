@@ -4,5 +4,5 @@ cd ~
 cd ${ROM_NAME}
 source build/envsetup.sh;
 lunch $PRODUCT_NAME-$VARIANT
-mka evolution -j4
+mka evolution -j2
 exit 0;
