@@ -4,5 +4,5 @@ cd ~
 cd ${ROM_NAME}
 source build/envsetup.sh;
 lunch $PRODUCT_NAME-$VARIANT
-mka evolution -j$(nproc --all)
+mka evolution -j6
 exit 0;
