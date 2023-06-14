@@ -26,6 +26,9 @@ git clone $HARDWARE_REPO --depth=1 -b $HARDWARE_BRANCH "hardware/oplus";
 
 git clone https://gitlab.com/Sanju0910/vendor_oneplus_apps depth=1 "vendor/oneplus/apps";
 
+git clone https://github.com/Sanju0910/android_packages_apps_OPlusExtras -b RisingOS "packages/apps/OPlusExtras";
+
+git clone https://github.com/Sanju0910/android_vendor_dolby_atmos "vendor/dolby/atmos";
 
 
 exit 0;
