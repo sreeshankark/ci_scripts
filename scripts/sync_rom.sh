@@ -24,8 +24,8 @@ rm -rf hardware/oplus;
 
 git clone $HARDWARE_REPO --depth=1 -b $HARDWARE_BRANCH "hardware/oplus";
 
-rm -rf prebuilts/clang/kernel;
+git clone https://gitlab.com/Sanju0910/vendor_oneplus_apps depth=1 "vendor/oneplus/apps";
 
-git clone https://gitlab.com/Sanju0910/clang-r487747 --depth=1 -b main prebuilts/clang/kernel/linux-x86/clang-r487747;
+
 
 exit 0;
